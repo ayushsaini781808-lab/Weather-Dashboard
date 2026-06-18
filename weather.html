@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌤 Weather Dashboard</h1>
+
+        <select id="cityInput">
+            <option value="">Select a City</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Saharanpur">Saharanpur</option>
+            <option value="Ghaziabad">Ghaziabad</option>
+            <option value="Meerut">Meerut</option>
+            <option value="Noida">Noida</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Dehradun">Dehradun</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Ranchi">Ranchi</option>
+            <option value="Patna">Patna</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Manali">Manali</option>
+            
+            
+        </select>
+
+        <button onclick="getWeather()">Get Weather</button>
+
+        <p id="error"></p>
+
+        <div id="weatherCard" class="weather-card">
+            <h2 id="city"></h2>
+
+            <div class="info">
+                <p><strong>🌡 Temperature:</strong> <span id="temp"></span></p>
+                <p><strong>💧 Humidity:</strong> <span id="humidity"></span></p>
+                <p><strong>🌬 Wind:</strong> <span id="wind"></span></p>
+                <p><strong>☁ Condition:</strong> <span id="condition"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
